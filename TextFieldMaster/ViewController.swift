@@ -8,18 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
+    @IBOutlet weak var textField: BaseTextField!
+    @IBOutlet weak var emailTextField: EmailTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        textField.delegate = self
+        textField.setBorderWith(width: 3.0)
+        textField.maxLength = 5
+        textField.leftPadding = 10.0
+        textField.setCornerRadius(radius: 10.0)
+        textField.placeholder = "olala"
+        textField.setPlaceHolderColor(color: UIColor.gray)
+        textField.setRoundCorner()
+        
+        
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+       return self.textField.ChangeText(in: range, replacementText: string)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
 
+    @IBOutlet weak var ok: UIButton!
 
+    @IBAction func okTouch(_ sender: Any) {
+        print(emailTextField.isValidEmail())
+    }
 }
 

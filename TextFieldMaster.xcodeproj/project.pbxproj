@@ -14,6 +14,8 @@
 		42C7CFEA1E4C8ABE00680A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C7CFE81E4C8ABE00680A7D /* LaunchScreen.storyboard */; };
 		42C7CFF51E4C8ABE00680A7D /* TextFieldMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C7CFF41E4C8ABE00680A7D /* TextFieldMasterTests.swift */; };
 		42C7D0001E4C8ABF00680A7D /* TextFieldMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C7CFFF1E4C8ABF00680A7D /* TextFieldMasterUITests.swift */; };
+		42C7D00E1E4C8B0300680A7D /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C7D00D1E4C8B0300680A7D /* BaseTextField.swift */; };
+		42C7D0121E4CCC4500680A7D /* EmailTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C7D0111E4CCC4500680A7D /* EmailTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		42C7CFFB1E4C8ABE00680A7D /* TextFieldMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C7CFFF1E4C8ABF00680A7D /* TextFieldMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMasterUITests.swift; sourceTree = "<group>"; };
 		42C7D0011E4C8ABF00680A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C7D00D1E4C8B0300680A7D /* BaseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		42C7D0111E4CCC4500680A7D /* EmailTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmailTextField.swift; path = ../EmailTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		42C7CFDE1E4C8ABE00680A7D /* TextFieldMaster */ = {
 			isa = PBXGroup;
 			children = (
+				42C7D0111E4CCC4500680A7D /* EmailTextField.swift */,
 				42C7CFDF1E4C8ABE00680A7D /* AppDelegate.swift */,
 				42C7CFE11E4C8ABE00680A7D /* ViewController.swift */,
+				42C7D00D1E4C8B0300680A7D /* BaseTextField.swift */,
 				42C7CFE31E4C8ABE00680A7D /* Main.storyboard */,
 				42C7CFE61E4C8ABE00680A7D /* Assets.xcassets */,
 				42C7CFE81E4C8ABE00680A7D /* LaunchScreen.storyboard */,
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					42C7CFDB1E4C8ABE00680A7D = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V5CBZTV7NC;
 						ProvisioningStyle = Automatic;
 					};
 					42C7CFEF1E4C8ABE00680A7D = {
@@ -259,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C7D0121E4CCC4500680A7D /* EmailTextField.swift in Sources */,
+				42C7D00E1E4C8B0300680A7D /* BaseTextField.swift in Sources */,
 				42C7CFE21E4C8ABE00680A7D /* ViewController.swift in Sources */,
 				42C7CFE01E4C8ABE00680A7D /* AppDelegate.swift in Sources */,
 			);
@@ -412,7 +421,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V5CBZTV7NC;
 				INFOPLIST_FILE = TextFieldMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smr.TextFieldMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +435,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V5CBZTV7NC;
 				INFOPLIST_FILE = TextFieldMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smr.TextFieldMaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
